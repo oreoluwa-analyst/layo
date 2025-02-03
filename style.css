@@ -75,12 +75,20 @@ nav ul li a {
 /* Projects */
 #projects {
     padding: 50px;
-    text-align: center;
+    background-color: #f9f9f9; /* Light background color for the section */
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
 }
 
 .project-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around; /* Distributes the cards with equal space between them */
+    flex-wrap: wrap; /* Allows the cards to wrap on smaller screens */
+    gap: 20px; /* Adds space between the project cards */
 }
 
 .project-card {
@@ -89,12 +97,29 @@ nav ul li a {
     border-radius: 10px;
     text-align: center;
     width: 250px;
+    border: 2px solid #ddd; /* Adds a border around each card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.project-card:hover {
+    transform: translateY(-10px); /* Slightly lifts the card on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
 }
 
 .project-card img {
     width: 100%;
-    border-radius: 10px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px; /* Adds space between the image and the title */
 }
+
+.project-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 10px;
+}
+
 
 /* Footer (Contact Section) */
 footer {

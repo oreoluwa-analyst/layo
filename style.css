@@ -72,10 +72,11 @@ nav ul li a {
     display: inline-block;
 }
 
-/* Projects */
+/* Projects Page Styles */
 #projects {
     padding: 50px;
-    background-color: #f9f9f9; /* Light background color for the section */
+    background-color: #f9f9f9;
+    text-align: center;
 }
 
 h2 {
@@ -84,11 +85,12 @@ h2 {
     color: #333;
 }
 
+/* Project Cards */
 .project-container {
     display: flex;
-    justify-content: space-around; /* Distributes the cards with equal space between them */
-    flex-wrap: wrap; /* Allows the cards to wrap on smaller screens */
-    gap: 20px; /* Adds space between the project cards */
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .project-card {
@@ -97,21 +99,21 @@ h2 {
     border-radius: 10px;
     text-align: center;
     width: 250px;
-    border: 2px solid #ddd; /* Adds a border around each card */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-10px); /* Slightly lifts the card on hover */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
 .project-card img {
     width: 100%;
     height: auto;
     border-radius: 5px;
-    margin-bottom: 15px; /* Adds space between the image and the title */
+    margin-bottom: 15px;
 }
 
 .project-card h3 {
@@ -120,8 +122,7 @@ h2 {
     margin-top: 10px;
 }
 
-
-/* Footer (Contact Section) */
+/* Footer */
 footer {
     background-color: #fae3d9;
     text-align: center;
@@ -145,6 +146,7 @@ footer p {
     margin-top: 10px;
     font-size: 14px;
 }
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     /* Navbar */

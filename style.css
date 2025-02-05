@@ -8,25 +8,24 @@
 
 body {
     background: url(background_design.jpg) no-repeat center center/cover;
+    background-color: #f4f4f4; /* Fallback background color */
     color: #333;
     line-height: 1.6;
 }
-
-
 
 /* Navbar */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #003c5e;
+    background-color: #0078d4;
     padding: 20px 50px;
     border-bottom: 5px solid #0070a3;
 }
 
 header h1 {
     font-size: 26px;
-    color: white;
+    color: #cccccc;
     font-weight: bold;
     margin: 0;
 }
@@ -43,7 +42,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: #cccccc;
     font-weight: 500;
     font-size: 18px;
     transition: color 0.3s ease, transform 0.3s ease;
@@ -61,20 +60,33 @@ nav ul li a:hover {
     justify-content: center;
     padding: 60px;
     text-align: left;
-    background: url('background_design.jpg') no-repeat center center/cover;
+    background: url('background_design.jpg') no-repeat center center/cover; /* Background image for the middle section */
     border-radius: 12px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .profile-img {
-    width: 180px;
-    height: 180px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     margin-right: 30px;
-    border: 4px solid #0092c8;
+    border: 4px solid #0078d4;
     transition: transform 0.3s ease;
 }
-
+.background {
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    filter: brightness(0.3);
+    z-index: -100;
+    
+}
 .profile-img:hover {
     transform: scale(1.1);
 }
@@ -84,17 +96,21 @@ nav ul li a:hover {
 }
 
 .about-text h2 {
-    color: #151616;
+    color: #cccccc;
     font-size: 32px;
     margin-bottom: 15px;
 }
 
 .about-text p {
     font-size: 18px;
-    color: #0e0d0d;
+    color: #cccccc;
     line-height: 1.8;
     margin-bottom: 25px;
-    font-style: italic;
+    font-style: normal;
+    font-size: large;
+    font-weight: 300;
+    justify-content: center;
+    text-rendering: optimizeLegibility;
 }
 
 .about-text .passionate {
@@ -109,12 +125,13 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     gap: 30px;
+    margin-right: 400px;
 }
 
 .btn {
     text-decoration: none;
-    background-color: #0092c8;
-    color: white;
+    background-color: #0078d4;
+    color: #cccccc;
     padding: 12px 25px;
     border-radius: 6px;
     font-weight: bold;
@@ -212,10 +229,10 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
-    background-color: #003c5e;
-    color: white;
+    background-color: #0078d4;
+    color: #cccccc;
     text-align: center;
-    padding: 30px;
+    padding: 5px;
     border-top: 5px solid #0070a3;
     position: relative;
 }
@@ -234,7 +251,7 @@ footer p {
 }
 
 .social-icons a {
-    color: white;
+    color: #cccccc;
     text-decoration: none;
     transition: color 0.3s ease, transform 0.3s ease;
 }

@@ -261,3 +261,61 @@ footer p {
     transform: scale(1.2);
 }
 
+/* Responsive Design for Mobile Screens */
+@media (max-width: 768px) {
+    /* Navbar */
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* About Section */
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .profile-img {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto 15px;
+    }
+
+    .about-text {
+        max-width: 100%;
+    }
+
+    /* Buttons */
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+        gap: 15px;
+    }
+
+    /* Projects Section */
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 90%;
+    }
+
+    /* Footer */
+    footer {
+        padding: 10px;
+    }
+
+    .social-icons {
+        gap: 15px;
+    }
+}
